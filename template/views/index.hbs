@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='icon' href='/img/weather.png'>
+    <link rel='stylesheet' href='/css/style.css'>
+    <script defer src='js/script.js'></script>
+    <title>Document</title>
+</head>
+<body>
+    <h1> {{>header}} </h1>
+    {{!-- <h2>{{name}}</h2> --}}
+    <form id='form'>
+        <label for='address'>Enter the location</label>
+        <br>
+        <input type='text' id='address'>
+        <input id='submit' type='submit' value='Get forecast'>
+    </form>
+    <div id='result'></div>
+    {{>footer}}
+</body>
+</html>
