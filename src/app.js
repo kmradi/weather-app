@@ -8,7 +8,7 @@ const pathToPublic = path.join(__dirname,'../public')
 const pathToViews = path.join(__dirname,'../template/views')
 const pathToPartials = path.join(__dirname,'../template/partials')
 
-
+const port = process.env.PORT || 3000
 const app = express()
 
 //setup static directory to serve
@@ -78,6 +78,6 @@ app.get('*',(req,res)=>{
     })
 })
 
-app.listen(3000,()=>{
+app.listen(port,()=>{
     console.log('server is running')
 })

@@ -6,7 +6,7 @@ const result = document.getElementById('result')
 form.addEventListener('submit',(e) =>{
     result.innerText = 'Loading...'
     e.preventDefault()
-    let url = 'http://localhost:3000/weather?address='+input.value
+    let url = '/weather?address='+input.value
     fetch(url).then((response) => {
     response.json().then((data) => {
         if(data.error)
